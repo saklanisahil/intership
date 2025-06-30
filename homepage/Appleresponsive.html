@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apple website</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .navbar {
+            height: 45px;
+            width: 100%;
+            background-color: #e8e8ed;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0 300px;
+        }
+
+        .nav-link {
+            font-weight: 500;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        i {
+            color: black;
+        }
+
+        .second-section {
+            height: 90vh;
+            width: 100%;
+            display: flex;
+        }
+
+        .second-section .left,
+        .second-section .right {
+            width: 50%;
+            height: 90vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .second-section .left {
+            background-image: url(https://images.unsplash.com/photo-1726732946451-98690db97aae?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        }
+
+        .second-section .right {
+            background-image: url(https://images.unsplash.com/photo-1727079513748-d03e7b8c8947?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        }
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.4);
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .overlay .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            text-align: center;
+        }
+
+        .overlay .content h1 {
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 100;
+        }
+
+        .overlay .content p {
+            padding: 10px 0;
+        }
+
+.overlay .content button {
+    padding: 10px 30px;
+    background: linear-gradient(135deg, #0071e3, #005bb5);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="nav-link"><i class="fa-brands fa-apple"></i></div>
+        <div class="nav-link">Store</div>
+        <div class="nav-link">Mac</div>
+        <div class="nav-link">iPad</div>
+        <div class="nav-link">iPhone</div>
+        <div class="nav-link">Watch</div>
+        <div class="nav-link">Vision</div>
+        <div class="nav-link">AirPod</div>
+        <div class="nav-link">TV & Homes</div>
+        <div class="nav-link">Entertainment</div>
+        <div class="nav-link">Accessories</div>
+        <div class="nav-link">Support</div>
+        <div class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div class="nav-link"><i class="fa-solid fa-cart-shopping"></i></div>
+    </div>
+
+    <div class="second-section">
+        <div class="left">
+            <div class="overlay">
+                <div class="content">
+                    <h1>Welcome to iPhone</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, doloremque?</p>
+                    <button>Buy</button>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="overlay">
+                <div class="content">
+                    <h1>Welcome to iPhone</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, inventore.</p>
+                    <button>Buy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
